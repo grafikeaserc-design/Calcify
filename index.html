@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MathsGame</title>
+</head>
+<body>
+    <div class = "win">
+        <div class="splash-screen"></div>
+        <div class="game-screen">
+            <div id="game-box">
+                <!--game modes-->
+                <div class = "modes-bar">
+                    <button class = "mode-btn active" data-time="15">15s</button>
+                    <button class = "mode-btn" data-time="30">30s</button>
+                    <button class = "mode-btn" data-time="60">60s</button>
+                    <button class = "mode-btn" data-time="infinite">&infin;</button>
+                </div>
+                <!--digits-->
+                <div class="digit-modes-bar">
+                    <button class="digit-btn active" data-digits="1">1 Digit</button>
+                    <button class="digit-btn" data-digits="2">2 Digits</button>
+                    <button class="digit-btn" data-digits="3">3 Digits</button>
+                </div>
+                <!--stats-->
+                <div class="stats">
+                    <div id ="timer-display">15</div>
+                </div>
+
+                <div id= "question">
+                    <div id = "question-label"><p>What is the result of :</p></div>
+                    <div id = "question-expression"><p>1 + 1 ?</p></div>
+                </div>
+                <div id= "user-response"><input type="search" id ="answer-input" placeholder="Type your answer here" autocomplete="off" autocorrect="off" autocapitalize="off"></div>
+                <div id = "feedback-screen">
+                    <div id ="feedback-text">Correct!</div>
+                </div>
+                <!--reset button
+                <button id="restart-btn" aria-label="Restart Game">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+                    </svg>
+                </button>-->
+                <!--check progress-->
+                <div class="controls-container">
+                    <button id="restart-btn" aria-label="Restart Game">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+                    </svg>
+                    </button>
+                    <button id="finish-btn" class="hidden">Finish & Check Progress</button>
+                </div>
+
+                <!---summary-->
+                <div id="summary-overlay" class="hidden">
+                        <div class="summary-card">
+                            <h2 class="summary-title" id="summary-title">Time's Up!</h2>
+                            <div class="summary-stats">
+                                <div class="stat-item">
+                                    <span class="stat-value" id="stat-attempted">0</span>
+                                    <span class="stat-label">Attempted</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value" id="stat-wrong">0</span>
+                                    <span class="stat-label">Wrong</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value" id="stat-avg-time">0.0s</span>
+                                    <span class="stat-label">Avg Time / Q</span>
+                                </div>
+                            </div>
+                            <button id="summary-restart-btn">Restart Game</button>
+                            <div class="restart-hint">Press <kbd>Tab</kbd> to restart</div>
+                        </div>
+                    </div>
+            </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
