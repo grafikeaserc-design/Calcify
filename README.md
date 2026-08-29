@@ -21,4 +21,4 @@ A fast-paced web app where users sharpen their mental math skills by solving dyn
 You only need a modern web browser (Chrome, Firefox, Safari, Edge) to run this app locally.
 ## Live Demo
 
-Try the game live here: [Play Calcify]()
+Try the game live here: [Play Calcify](https://grafikeaserc-design.github.io/Calcify/)
